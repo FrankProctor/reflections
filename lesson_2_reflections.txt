@@ -1,0 +1,31 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Creates a git repository holding all files in a directory. Then run git status. Then you can begin utilizing git features on all files in the directory.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers? Staging area is a zone between working directory and repository. It contains only the files that you want to rack together, which may not be all the files in the working directory.
+
+Here's a change just to test: 
+git commit -m "I just added this change for a test"
+
+git diff  Compares working directory to staging area
+git diff --staged  Compares staging area and most recent commit
+git diff commit1 commit2  Compares most recent commit (commit1) to previous commit (commit2) 
+
+How can you use the staging area to make sure you have one commit per logical change?
+By comparing that staging area, first to the directory, then to the latest commit. You should make sure there is only one logical step between them.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When you are trying a new direction with your code, or want to create an alternative version. It helps because you can keep the base project untouched, by checking out a branch and working purely with than.
+
+
+git status checks what files file been modified but not staged for commit.
+
+git add asteroids  Adds asteroids to the staging area
+
+git checkout coins  Checks out a different branch
+
+git log --graph --oneline master coins  Compares master branch and coins branch.
+
+Use diagrams to help you visualize the branch structure.
+
+

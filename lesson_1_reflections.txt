@@ -1,0 +1,39 @@
+Comparing two versions of files can help you find bugs because looking for bugs is a process of trial and error. You are constantly trying new lines if code. When you add, delete or change something to see if it resolves a bug, you can compare directly against the previous code. It also helps you go back exactly to your previous code if the fix is not successful. 
+
+It is a record of your improvements, and of your learning process.
+
+Manually choosing when to commit lets you establish the logic, which makes it easier to follow. The downside is that you may forget to commit an important potential change. And it requires time to commit and create good commit messages.
+
+$ git log --stat  ->  gives statistics about which files have changed in the commit.
+
+q  -> stops viewing the git log output
+
+Git saves all files in a repository because files may be interrelated. Commit is a snapshot of all the files in your repository a the time you chose to make the commit.
+
+alias git="/usr/local/git/bin/git"
+
+git config --global color.ui auto  -> for coloured output
+
+
+git diff firstID secondID
+
+
+
+1) Clone the repository with: git clone https://github.com/udacity/asteroids.git.  
+2) use 'git log' to obtain the log of all commits. 
+3) use 'git diff 1st_id 2nd_id to compare the differences between the two files. DON'T FORGET TO SCROLL ALL THE WAY TO THE BOTTOM! 
+
+'git checkout f19cb1b80fe27e938e4d72770ca0a42f25e99ecc' means you've DETACHED THE HEAD by checking out and working on an older commit.
+
+How might using version control make you more confident to make changes that could break something? Because you can easily go back to a previous version.
+
+Now that you have your workspace set up, what do you want to try using Git for? To proceed through the Android course, and to work on my COMPS201 java projects.
+
+git diff
+git clone
+git checkout
+git log
+
+
+
+
