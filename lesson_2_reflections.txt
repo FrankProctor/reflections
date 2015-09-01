@@ -33,3 +33,14 @@ Use diagrams to help you visualize the branch structure.
 
 How can you use the staging area to make sure you have one commit per logical change?
 After staging, but before putting in the repository, you can easily compare the changes in the file to the one in the repository, and confirm it is a single logical change.
+
+'git log --graph --oneline branch_1 branch_2'
+
+'git checkout -b new_branch_name' combines two commands: 1) git branch new_branch_name; 2) git checkout new_branch_name.
+
+How do the diagrams help you visualize the branch structure? They show branches that have been started, and allows you to trace their parents.
+
+
+
+
+
