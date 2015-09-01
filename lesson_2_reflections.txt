@@ -40,6 +40,13 @@ After staging, but before putting in the repository, you can easily compare the 
 
 How do the diagrams help you visualize the branch structure? They show branches that have been started, and allows you to trace their parents.
 
+What is the result of merging two branches together?  The combined commits of the two branches are merged into a single branch
+
+Why do we represent it in the diagram the way we do? To track what commits came from which branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually? Automatic merging gives up some control, but to do all the merging manually would be a gargantuan task.
+
+
 
 
 
