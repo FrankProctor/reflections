@@ -28,4 +28,8 @@ git log --graph --oneline master coins  Compares master branch and coins branch.
 
 Use diagrams to help you visualize the branch structure.
 
+'git diff' shows differences between working directory and staging area
+'dit diff --staged' shows differences between staging area and repository
 
+How can you use the staging area to make sure you have one commit per logical change?
+After staging, but before putting in the repository, you can easily compare the changes in the file to the one in the repository, and confirm it is a single logical change.
