@@ -1,3 +1,13 @@
 
 
 When would you want to use a remote repository rather than keeping all your work local? When you are collaborating with others. When you want to ensure you have a backup.
+
+'git pull origin master' pulling files from remote: the remote I am pulling from;  the branch I want to pull (master branch on remote)
+
+'git push origin master' pushing files to remote: the remote I want to send changes to; the name of the local branch I'd like to push.
+
+'git remote -v' - remote but with additional information, including the URL). V stands for verbose.
+
+'git add origin git@githubURL....' to add the repository (URL) on GitHub as a remote (origin is the name I'll use in this repository to refer to the repository on GitHub.)
+
+'git remote' - Shows you all the current remotes. Allows you to view and create remotes (on GitHub)
