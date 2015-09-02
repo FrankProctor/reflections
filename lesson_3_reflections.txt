@@ -1,3 +1,3 @@
 
-FrankProctor / email / R@bbi#B1ue
-When would you want to use a remote repository rather than keeping all your work local? When you are collaborating with others. When you want to ensure you have a backup/
+
+When would you want to use a remote repository rather than keeping all your work local? When you are collaborating with others. When you want to ensure you have a backup.
