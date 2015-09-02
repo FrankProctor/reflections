@@ -13,3 +13,19 @@ When would you want to use a remote repository rather than keeping all your work
 'git remote' - Shows you all the current remotes. Allows you to view and create remotes (on GitHub)
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?  By pulling changes manually, you can control when you consolidate changes into groups before pulling them, otherwise it would result in too many commits.
+
+a fork is just a clone that GitHub makes for you on their own machines; forks all link back to the original.
+
+'git clone git@githubURL....' clones that repository to my own computer. Also, git automatically sets up a remote pointing to the GitHub repository you cloned from.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+FORK - is a kind of "clone" within GitHub itself. Allows you to "clone" a repository created by someone else, even if you don't have permission to edit their repository.
+CLONE- copy within your local machine, or from GitHub to your local machine.
+BRANCH - a new extension of an existing project, connects back to parent.
+
+
+
+
+
+
+
