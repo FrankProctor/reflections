@@ -16,13 +16,23 @@ Why might you want to always pull changes manually rather than having Git automa
 
 a fork is just a clone that GitHub makes for you on their own machines; forks all link back to the original.
 
-'git clone git@githubURL....' clones that repository to my own computer. Also, git automatically sets up a remote pointing to the GitHub repository you cloned from.
+'git clone git@githubURL....' clones that repository to my own computer. Also, git automatically sets up a remote (called origin) pointing to the GitHub repository you cloned from.
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 FORK - is a kind of "clone" within GitHub itself. Allows you to "clone" a repository created by someone else, even if you don't have permission to edit their repository.
 CLONE- copy within your local machine, or from GitHub to your local machine.
 BRANCH - a new extension of an existing project, connects back to parent.
 
+'git fetch origin' fetches the latest GitHub commit onto local as a separate branch
+
+'git merge master origin/master' which merges the two resulting local branches.
+
+
+IN REALITY, 'git pull origin master' is equivalent to two separate steps: 1) 'git fetch origin' which fetches the latest GitHub commit as a separate branch; AND 2) 'git merge master origin/master' which merges the two resulting branches.
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+So that you will have it to refer to if you need to work offline. And so you can easily merge your changes into it.
 
 
 
