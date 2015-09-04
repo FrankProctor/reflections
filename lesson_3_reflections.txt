@@ -4,7 +4,7 @@ When would you want to use a remote repository rather than keeping all your work
 
 'git pull origin master' pulling files from remote: the remote I am pulling from;  the branch I want to pull (master branch on remote)
 
-'git push origin master' pushing files to remote: the remote I want to send changes to; the name of the local branch I'd like to push.
+'git push origin master' pushing files to remote: the remote I want to send changes to; the name of the local branch I'd like to push. (if you want to push a branch other than master, simply use that name instead).
 
 'git remote -v' - remote but with additional information, including the URL). V stands for verbose.
 
@@ -34,6 +34,18 @@ IN REALITY, 'git pull origin master' is equivalent to two separate steps: 1) 'gi
 What is the benefit of having a copy of the last known state of the remote stored locally?
 So that you will have it to refer to if you need to work offline. And so you can easily merge your changes into it.
 
+
+git branch new_branch_name
+git checkout new_branch_name
+git add edited_file_name
+git commit
+git push origin new_branch_name
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?  Using GoogleDocs? Harder to compare file to file, and would have to do more manual searching. Also, no branching to make sure you don't mess up the master file. Or, even more complicated if you have to email files back and forth. 
+
+
+ 
 
 
 
