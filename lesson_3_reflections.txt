@@ -45,8 +45,33 @@ git push origin new_branch_name
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?  Using GoogleDocs? Harder to compare file to file, and would have to do more manual searching. Also, no branching to make sure you don't mess up the master file. Or, even more complicated if you have to email files back and forth. 
 
 
- 
+In a collaborative environment, only make changes to master (GitHub) through Pull requests. Otherwise, things can change out from under you without notification.
 
+If you want to look before you pull:
+git fetch
+git merge origin/master master
+
+if you don't need to look (already know the changes you're pulling):
+git pull origin master
+
+then ...
+git merge master different oil
+(now you may get conflict) => RESOLVE
+git commit -m "resolve merge and commit"
+OR, you may need to start with: git add filename
+THEN, git push origin different-oil
+git log -n 1
+
+fork - A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+fetch - You can do a git fetch at any time to update your remote-tracking branches under refs/remotes/<remote>/ . This operation never changes any of your own local branches under refs/heads , and is safe to do without changing your working copy.
+
+pull request - Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
+
+fast-forward merge - Because the commit pointed to by the branch you merged in was directly upstream of the commit you’re on, Git simply moves the pointer forward. To phrase that another way, when you try to merge one commit with a commit that can be reached by following the first commit’s history, Git simplifies things by moving the pointer forward because there is no divergent work to merge together – this is called a “fast-forward.” Changes where a branch points.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have? 
+If you are collaborating, create a new branch and make changes on it so others will not find the master changed out from under them. Once the branch incorporates your chane(s), you can send a pull request and get feedback from others, who can choose to comment or to merge your change into master. If there is a conflict with some change they have made, then you can pull everything back to your local git, resolve any conflicts, then repeat the process: push your updated branch to GitHub and then send around a pull request.  
 
 
 
